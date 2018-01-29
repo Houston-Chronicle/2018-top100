@@ -1,0 +1,333 @@
+.results {
+	height:350px;
+}
+.results .img-responsive {
+	height:50%;
+	width:100%;
+}
+@media (max-width:500px) {
+	.results {
+		height:auto;
+	}
+}
+/* Custom CSS styles */
+p {
+	font-family: "Georgia", serif;
+	font-size: 18px;
+	line-height: inherit;
+	color: #999;
+	margin-bottom:24px;
+}
+hr {
+	margin:10px 0;
+}
+body {
+	overflow-x: hidden;
+	background-color:#000;
+	padding-top:70px;
+}
+#container {
+	overflow: inherit;
+}
+h1 {
+	margin-top:10px;
+}
+h2 {
+	font-family:Georgia, serif;
+	color:#fefacb;
+	font-weight:700;
+}
+#header {
+	text-transform:uppercase;
+	text-align:center;
+	font-size:62px;
+	font-family:Georgia, serif;
+	color: #222;
+}
+strong {
+	font-family: 'Georgia', serif;
+	font-size:15px;
+}
+/* Search bar styles */
+.form {
+	text-align:center;
+	margin-top:8%;
+}
+.input-special {
+	width:100%;
+	height:7vh;
+	font-size:25px;
+	padding:20px;
+}
+/* Search bar clone styles */
+.clone, .clone2 {
+	font-size:15px;
+	padding:23px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 0 23px;
+}
+/* Responsive search bar styles */
+.formclone {
+	display:none;
+}
+.clone {
+	display:none;
+}
+@media (min-width:1026px) {
+	.formclone2, .clone2  {
+		display:none;
+	}
+}
+@media (min-width:701px) and (max-width:1025px) {
+	.formclone2, .clone2 {
+		display:inline-block;
+	}
+	#magnifying {
+		display:none;
+	}
+}
+@media (max-width:700px) {
+	.formclone2, .clone2 {
+		display:none;
+	}
+}
+/* Filter styles */
+.restaurantfilters button, .restaurantfilters select {
+	font-family:"Sanchez", serif;
+	text-align:left;
+	background-color:#f3f1f1;
+	width:49%;
+	height:40px;
+	font-size:16px;
+	margin-bottom:5px;
+	overflow:visible;
+	border-color:buttonface;
+	border-style:outset;
+	border-image:initial;
+	border-width:2px;
+	border-radius:5px;
+}
+@media (max-width:500px) {
+	.restaurantfilters button, .restaurantfilters select {
+		width:100%;
+	}
+}
+.restaurantfilters button.selected {
+	background-color:#666;
+	color:#fff;
+}
+.restaurantfilters {
+	margin-top:24px;
+	padding-bottom:12px;
+	border-bottom:5px solid #000;
+}
+.restaurantfilters ul {
+	text-align:center;
+	padding-left:0;
+	margin-bottom:0;
+}
+.restaurantfilters li {
+	display:inline;
+	font-size:16px;
+}
+/* About styles */
+#about {
+	display:none;
+}
+#about strong p {
+	color:#e698bf;
+	margin-bottom:10px;
+}
+#about a:hover {
+	color:#999;
+	text-decoration:none;
+}
+/* By the numbers styles */
+#numbers {
+	display:none;
+}
+#numbers strong p {
+	color:#e698bf;
+	margin-bottom:10px;
+}
+/* Results styles */
+.results {
+	border: 1px solid #000;
+	margin: 30px auto 24px auto;
+	padding:5px 15px;
+	background-color:#fff;
+}
+.results p {
+	font-size:12px;
+	margin-bottom:10px;
+}
+.results .img-responsive {
+	height:300p x;
+	width:100 %;
+}
+.row a, .row a:hover, .row a:visited {
+	color:#222;
+	text-decoration:none;
+	font-family:"Droid Sans";
+}
+.name {
+	font-size:18px;
+	text-align:left;
+	font-weight:600;
+	font-family: "Sanchez", serif;
+	line-height:1;
+	padding-bottom:5px;
+}
+/* Hyperlink styling */
+a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: none;
+}
+a:visited {
+	color: #999;
+}
+a:hover {
+	border-bottom:none;
+}
+/* Responsive image styling */
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.navbar-brand > img {
+	display: block;
+	max-width: 228px;
+	max-height: 25px;
+}
+/* Navbar styling */
+.navbar-default {
+	background-color:#000000;
+	border-color:#000000;
+}
+.navbar-default .navbar-collapse {
+	background-color:#000000;
+}
+.navbar-default .navbar-nav > li > a{
+	color:#ffffff;
+}
+.navbar-default .navbar-nav > li > a:focus{
+	color:#ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color:#000000;
+	background-color:#ffffff;
+}
+.navbar-default .navbar-nav > .open > a {
+	background-color:#ffffff;
+	color:#000000;
+}
+.navbar-default .navbar-nav > .open > a:hover {
+	background-color:#ffffff;
+	color:#000000;
+}
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color:#ffffff;
+	color:#000000;
+}
+.dropdown-menu {
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+}
+.dropdown-menu > li > a {
+	color:#000000;
+}
+.dropdown-menu > li > a:hover {
+	background-color:#000000;
+	color:#ffffff;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.navbar-default .fa-2x {
+	color:#fff;
+}
+.navbar-default li > a:hover> .fa-2x {
+	background-color:white;
+	color:black;
+}
+nav a {
+	border-bottom:none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#fff;
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color:#000;
+}
+@media (min-width: 200px) and (max-width:321px) {
+	.navbar-brand {
+		padding:15px 0px;
+	}
+}
+/* Mobile navbar styles */
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color:white;
+} 
+.navbar-default .navbar-nav > .open > a:focus {
+	color:white;
+	background-color:black;
+}
+}
+@media (max-width: 1220px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block!important;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 1205px) {
+    .navbar-default .navbar-collapse {
+        max-height:100vh;
+    }
+}

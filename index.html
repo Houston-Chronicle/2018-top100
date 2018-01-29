@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 100 Restaurants | HoustonChronicle.com</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Social meta tags -->
+	<meta name="description" content="Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining.">
+	<meta name="keywords" content="Houston Chronicle, Houston, restaurants, Top 100, Top 100 restaurants, restaurant rankings, Alison Cook, Houston eats">
+	<meta name="author" content="Houston Chronicle">
+	<meta property="og:type" content="Top 100 Restaurants | HoustonChronicle.com">
+	<meta property="og:title" content="Houston's Top 100 Restaurants">
+	<meta property="og:site_name" content="Houston Chronicle">
+	<meta property="og:url" content="http://projects.houstonchronicle.com/top100/">
+	<meta property="og:image" content="http://ww1.hdnux.com/photos/65/64/37/14108652/4/rawImage.jpg">
+	<meta property="og:description" content="Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining.">
+	<!-- Twitter card meta info -->
+	<meta name="twitter:card" content="Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining.">
+	<meta name="twitter:title" content="Houston's Top 100 Restaurants">
+	<meta name="twitter:site" content="@HoustonChron">
+	<meta name="twitter:creator" content="@HoustonChron" />
+	<meta name="twitter:url" content="http://projects.houstonchronicle.com/top100/">
+	<meta name="twitter:image" content="http://ww1.hdnux.com/photos/65/64/37/14108652/4/rawImage.jpg">
+	<meta name="twitter:description" content="Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining.">
+	<!-- Font Aerdomr icons-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">    
+	<!-- Bootstrap core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--load font awesome-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<!---AngularJS--->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!---load google font styles--->
+	<link href="//fonts.googleapis.com/css?family=Droid+Sans">
+	<!---Custom styles--->
+	<link rel='stylesheet' href="css/top100.css">
+	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+	<!-- Begin Hearst analytics-->
+	<script type="text/javascript" src="//nexus.ensighten.com/hearst/news-3p/Bootstrap.js"></script>
+	<!-- End Hearst analytics -->
+</head>
+<body ng-app="myApp"> 
+<div ng-controller="MyCtrl">
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	<form class="form-inline formclone2">
+		<input class="clone2" ng-model="search2" type="text" placeholder="Search" autofocus>
+	</form>
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="http://www.houstonchronicle.com/"><img src="http://ww4.hdnux.com/photos/24/13/32/5289647/4/rawImage.png" class="img-responsive"/></a>
+	</div>
+	<div id="navbar" class="collapse navbar-collapse auto">
+	<ul class="nav navbar-nav">
+		<li><a href="http://www.houstonchronicle.com/lifestyle/style/luxe-life/">Luxe Life</a></li>
+		<li><a href="http://www.houstonchronicle.com/subscribenow" target="_blank">Subscribe</a></li>
+		<li><a id="magnifying" href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+	<form class="form-inline formclone">
+		<input class="clone" ng-model="search2" type="text" placeholder="Search" autofocus>
+	</form>
+	</ul>
+	<ul class="nav navbar-nav navbar-right"> 
+		<li><a href=http://www.facebook.com/dialog/feed?app_id=653292111352579&amp;link=http%3A%2F%2Fprojects.houstonchronicle.com%2Ftop100&amp;display=popup&amp;redirect_uri=http%3A%2F%2Fwww.houstonchronicle.com%2Fwclose.html&amp;description=Chronicle%20critic%20Alison%20Cook%27s%202017%20Top%20100%20restaurants%20list%20features%20the%20best%20of%20Houston%20dining.&amp;picture=http%3A%2F%2Fww1.hdnux.com%2Fphotos%2F65%2F64%2F37%2F14108652%2F4%2FFrawImage.jpg&amp;name=Top%20100%20Restaurants%202017 target="_blank" onclick="return openWindow(this.href, 400, 580);"><i class="fa fa-2x fa-facebook"></i></a></li>
+		<li><a href="https://twitter.com/intent/tweet?text=Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining projects.houstonchronicle.com/top100" target="_blank"><i class="fa fa-2x fa-twitter"></i></a></li>
+		<li><a href="mailto:?subject=Houston Chronicle Top 100 Restaurants 2017 &body=Chronicle critic Alison Cook's 2017 Top 100 restaurants list features the best of Houston dining. Check it out at projects.houstonchronicle.com/top100"><i class="fa fa-2x fa-envelope"></i></a></li>
+	</ul>
+	</div><!--/.nav-collapse -->
+	</div>
+	</nav>
+	<!---Headline--->
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2">
+			<img class="img-responsive" src="images/banner.jpg" />
+			<p>Chronicle critic Alison Cook compiles the best dining the city has to offer.</p>
+			<p>Now you can search all 100 of this year’s top restaurants by name, neighborhood and cuisine. Enter your search below.</p>
+		</div>
+	</div>
+			<!---Search bar--->
+			<div class="container">
+			<form class="form-inline">
+				<input class="input-special" ng-model="search" type="text" placeholder="Search the Top 100">
+			</form><!---End search bar--->
+			<!---Begin filters--->
+			<div class="restaurantfilters">
+			<ul>
+			<!---Cuisine filter--->
+				<li>					
+					<select class="cuisines" ng-model="filters.clink">
+						<option value>Cuisines</option>					
+						<option value='american'>American</option>
+						<option value='barbecue'>Barbecue</option>
+						<option value='burgers'>Burgers/sandwiches</option>
+						<option value='chinese'>Chinese</option>
+						<option value='contempam'>Contemporary American</option>
+						<option value='creole'>Creole/Cajun</option>
+						<option value='french'>French</option>
+						<option value='greek'>Greek</option>
+						<option value='indian'>Indian</option>
+						<option value='indonesian'>Indonesian</option>
+						<option value='italian'>Italian</option>
+						<option value='japanese'>Japanese</option>
+						<option value='korean'>Korean</option>
+						<option value='malaysian'>Malaysian</option>
+						<option value='mediterranean'>Mediterranean</optio n>
+						<option value='mexican'>Mexican/Tex-Mex</option>
+						<option value='mideast'>Middle Eastern</option>
+						<option value='pakistani'>Pakistani</option>
+						<option value='polish'>Polish</option>
+						<option value='portuguese'>Portuguese</option>
+						<option value='seafood'>Seafood</option>
+						<option value='southam'>South American</option>
+						<option value='spanish'>Spanish</option>
+						<option value='steakhouse'>Steakhouse</option>
+						<option value='thai'>Thai</option>
+						<option value='venezuelan'>Venezuelan</option>
+						<option value='vietnamese'>Vietnamese</option>
+					</select>
+				</li>
+				<!---Neighborhoods filter--->
+				<li>				
+					<select class="neighborhood" ng-model="filters.nlink">
+						<option value>Neighborhoods</option><span class="caret"></span>
+						<option value='acres'>Acres Homes</option>
+						<option value='bellaire'>Bellaire</option>
+						<option value='briargrove'>Briargrove</option>
+						<option value='briarmeadow'>Briar Meadow</option>
+						<option value='chinatown'>Chinatown</option>
+						<option value='cypress'>Cypress</option>
+						<option value='downtown'>Downtown</option>
+						<option value='eastdo'>East Downtown</option>
+						<option value='eastend'>East End</option>
+						<option value='eldridge'>Eldridge</option>
+						<option value='ellington'>Ellington</option>
+						<option value='friendswood'>Friendswood</option>
+						<option value='galleria'>Galleria</option>
+						<option value='greenway'>Greenway Plaza</option>
+						<option value='gulfgate'>Gulfgate</option>
+						<option value='heights'>Heights</option>
+						<option value='hobby'>Hobby area</option>
+						<option value='katy'>Katy</option>
+						<option value='kemah'>Kemah</option>
+						<option value='leaguecity'>League City</option>
+						<option value='memorial'>Memorial</option>
+						<option value='memcity'>Memorial City</option>
+						<option value='midtown'>Midtown</option>
+						<option value='montrose'>Montrose</option>
+						<option value='museum'>Musuem District</option>
+						<option value='oakforest'>Oak Forest</option>
+						<option value='pearland'>Pearland</option>
+						<option value='rice'>Rice Village</option>
+						<option value='riveroaks'>River Oaks</option>
+						<option value='shady'>Shady Acres</option>
+						<option value='sharpstown'>Sharpstown</option>
+						<option value='southbelt'>Southbelt</option>
+						<option value='spring'>Spring</option>
+						<option value='spbranch'>Spring Branch</option>
+						<option value='sugarland'>Sugarland</option>
+						<option value='tanglewood'>Tanglewood</option>
+						<option value='woodlands'>The Woodlands</option>
+						<option value='thirdward'>Third Ward</option>
+						<option value='tomball'>Tomball</option>
+						<option value='kirby'>Upper Kirby</option>
+						<option value='uptown'>Uptown</option>
+						<option value='washington'>Washington Corridor</option>
+						<option value='woodlake'>Woodlake</option>
+					</select>
+				</li>
+			</ul>
+			<ul>
+				<!---Price filter--->
+				<li>
+					<select class="price" ng-model="filters.price">
+						<option value>Price</option>
+						<option value="cheap">$</option>
+						<option value="inexpensive">$$</option>
+						<option value="pricey">$$$</option>
+						<option value="highpriced">$$$$</option>
+					</select>
+				</li>
+				<!---New filter--->
+				<li>
+					<button class="new" ng-click="filters2 = {new: 'new'}"><i class="fa fa-plus-circle" aria-hidden="true"></i> New additions</button>
+					<button class="revertnew" ng-click="filters2 = {new: ''}" style="display:none"><i class="fa fa-plus-circle" aria-hidden="true"></i> New additions</button>
+				</li>
+			</ul>
+			<ul>
+				<!---Clear filter--->
+				<li>
+					<button class="clear" ng-click="clearFilter()"><i class="fa fa-filter" aria-hidden="true"></i> Clear filter</button>
+				</li>
+				<!---About filter--->
+				<li>
+					<button class="showabout" ng-click="clearFilter()"><i class="fa fa-info-circle" aria-hidden="true"></i> About</button>
+				</li>
+				<!---By the numbers filter--->
+				<li>
+					<button class="bythenumbers" ng-click="clearFilter()"><i class="fa fa-list-ol" aria-hidden="true"></i> By the numbers</button>
+				</li>
+			</ul>
+			</div><!----End filters---->
+			<!----About section---->		
+			<div id="about">
+				<div class="col-md-8 col-md-offset-2">
+					<!---Intro--->
+					<h2 class="interactive-header">Alison Cook introduces Houston's Top 100 restaurants</h2>
+					<p>This year's list of the city's Top 100 restaurants is hardly a tablet handed down from the mount. It's a variegated mosaic of what matters to a single critic, one who has made it her business to think about Houston restaurants for over four decades.</p>
+					<p>Food is always the primary consideration in these rankings, as is the consistence of its delivery. If your favorite place has gone missing, it may well be that it disappointed upon a recent revisit. Or it may simply mean that there is heightened competition in its category this year.</p>
+					<p>Ambition matters, whether it is broad-based or tightly focused. What doesn't matter is whether the food is costly or affordable, or whether the surroundings are luxurious. A sense of Houston place, however, is one of those intangibles that can make a difference. Service and attention to beverages can burnish a ranking, too.</p>
+					<p>Then there is the curious lightning that can strike: the feeling of joy a restaurant, a room, a certain dish can evoke. It's hard to pin down, but all the restaurants on this list have given me that gift.</p>
+					<p>You may notice that there are 30 ranked restaurants instead of the top 25 that were ranked last year. So rich and exciting has been our restaurant scene of late that expanding the rankings seemed like a sensible way to acknowledge this year's talent pool.</p>
+					<p>As always, this list is designed to be the subject of argument and debate. A food scene without a healthy dialectic is not much of a food scene at all. The only sure thing? Next year will be a different story. And that's the fun of it.</p>
+					<p>-<a href="http://www.houstonchronicle.com/author/alison-cook/" target="_blank">Alison Cook</a> <a href="https://twitter.com/alisoncook" target="_blank"><i class="fa fa-twitter"></i> <a href="mailto:alison.cook@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<h2 class="interactive-header">About Alison Cook</h2>
+					<p>Alison Cook has been the Houston Chronicle’s restaurant critic since 2002. She has won two James Beard Foundation awards for restaurant criticism, as well as the coveted M.F.K. Fisher Award for Distinguished Writing. Cook’s writing also has appeared in Texas Monthly, Esquire, GQ, The New York Times Magazine, Gourmet, Saveur, Food & Wine, Vogue, Travel & Leisure and House & Garden.</p>
+					<h2 class="interactive-header">Price guide</h2>
+					<p>$ - $10 or less</p>
+					<p>$$ - $11-$20</p>
+					<p>$$$ - $21-$30</p>
+					<p>$$$$ - More than $30</p>
+					<h2 class="interactive-header">Staff</h2>
+					<strong><p>Restaurant critic</p></strong>
+					<p>Alison Cook <a href="mailto:alison.cook@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<strong><p>Editor</p></strong>
+					<p>Jody Schmal <a href="mailto:jody.schmal@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<strong><p>Web designer/developer</p></strong>
+					<p>Jordan Rubio <a href="mailto:jordan.rubio@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<strong><p>Copy editors</p></strong>
+					<p>Gary Fulghum <a href="mailto:gary.fulghum@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<p>Suzanne Garofalo <a href="mailto:suzanne.garofalo@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<p>Syd Kearney <a href="mailto:syd.kearney@chron.com"><i class="fa fa-envelope"></i></a></p>
+					<strong><p>Photography</p></strong>
+					<p>Nick de la Torre <a href="https://www.nickdelatorrephoto.com/" target="_blank"><i class="fa fa-camera"></i></a></p>
+					<p>Houston Chronicle staff</p>
+				</div>
+			</div>
+		</div><!----End about section---->
+		<!----By the numbers section---->		
+		<div class="container">
+			<div id="numbers">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="interactive-header">By the numbers</h2>
+					<strong><p>350</p></strong>
+					<p>Approximate number of restaurant visits Chronicle critic Alison Cook made in the past year.</p>
+					<strong><p>16</p></strong>
+					<p>New additions to the 2017 Top 100 list.</p>
+					<strong><p>25</p></strong>
+					<p>Different types of cuisine.</p>
+					<strong><p>30</p></strong>
+					<p>Numerically-ranked restaurants on the 2017 list, up from 25 in 2016.</p>
+					<strong><p>5</p></strong>
+					<p>Restaurants on the 2016 list that have since closed (Oxheart, Bernadine's, Hunky Dory, Foreign Correspondents, Triniti).</p>
+					<strong><p>14</p></strong>
+					<p>Restaurants that are still open but fell off the 2017 list.</p>
+					<strong><p>3</p></strong>
+					<p>Restaurants reappearing on the list after a one- or two-year absence (Kitchen 713, Crawfish &amp; Noodles, Kiran's).</p>
+					<strong><p>3</p></strong>
+					<p>Restaurants that have changed names since last year's list (Habanera &amp; the Guero, Burger Chan, Pepper Twins).</p>
+					<strong><p>3</p></strong>
+					<p>Restaurateurs with three different restaurants on the 2017 list: Ronnie Killen (Killen's Barbecue, Killen's STQ and Killen's Steakhouse), Marco Wiles (Da Marco, Dolce Vita, Vinoteca Poscol) and Hugo Ortega/Tracy Vaught (Xochi, Hugo's, Caracol).</p>
+					<strong><p>$457.23</p></strong>
+					<p>Cook's tab at Cureight in The Woodlands, which included the tasting menu for two with wine.</p>
+					<strong><p>$10.83</p></strong>
+					<p>Cook's cheapest tab, at Burger Chan in Greenway Plaza.</p>
+					<strong><p>$85</p></strong>
+					<p>Cook's most expensive entrée, the Marble Farms Wagyu strip steak at Killen's Steakhouse.</p>
+					<strong><p>75</p></strong>
+					<p>Pieces of sushi and sashimi consumed by Cook during the research process.</p>
+					<strong><p>7</p></strong>
+					<p>Visits Cook made to No. 1 restaurant Xochi.</p>
+					<strong><p>45</p></strong>
+					<p>Years of experience Cook has writing about food.</p>
+					<strong><p>15</p></strong>
+					<p>Years Cook has been the restaurant critic at the Houston Chronicle.</p>
+					<strong><p>6</p></strong>
+					<p>Years Cook has produced a Top 100 list.</p>
+					<strong><p>3</p></strong>
+					<p>Restaurants that have earned the No. 1 spot: Oxheart (2016, 2014, 2013, 2012), The Pass &amp; Provisions (2015) and Xochi (2017).</p>
+					<strong><p>3</p></strong>
+					<p>Weeks of eating Cook lost due to acute bronchitis in summer 2017.</p>
+					<strong><p>432</p></strong>
+					<p>Emails exchanged between Cook and her editor in a 60-day period.</p>
+					<strong><p>2,100</p></strong>
+					<p>Food photographs taken by Top 100 photographer Nick de la Torre.</p>
+					<strong><p>20,000</p></strong>
+					<p>Words written by Cook in the 2017 Top 100 list.</p>
+					<strong><p>12</p></strong>
+					<p>Minutes it took Cook to complete her first margarita, at Ninfa's on Navigation, upon finishing the 2017 list.</p>
+				</div>
+			</div>
+		</div>
+			<!---Filter/search results--->
+			<div id="restaurantfilter">
+				<div class="container">
+					<div class="row">
+						<div ng-repeat="restaurant in restaurants | filter:filters| filter:filters2 | filter:search | filter:search2 | orderBy: 'rank'">
+							<div class="col-sm-6 col-md-3">
+								<a href="{{restaurant.story}}"><div class="results">
+									<img class="img-responsive" src="{{restaurant.image}}" />
+									<div class="name">{{restaurant.rank}}{{restaurant.rankend}} {{restaurant.name}}</div>
+									<p>{{restaurant.cuisine}} | {{restaurant.neighborhood}}</p></a>
+									<hr>
+									<a href="tel:{{restaurant.phone}}"><i class="fa fa-phone" aria-hidden="true"></i> {{restaurant.phone}}</a> </p> 
+									<a href="{{restaurant.links}}" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i> {{restaurant.website}}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!---End filter/search results--->
+	</div><!---End controller--->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/top100.js"></script> 
+</body>
+</html>
